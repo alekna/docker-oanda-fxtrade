@@ -1,6 +1,6 @@
 FROM alekna/openbox-desktop-vnc
 
-RUN yum install -y wget tar unzip java-1.8.0-openjdk; yum clean all
+RUN yum install -y wget tar unzip java-1.8.0-openjdk icecat; yum clean all
 RUN mkdir /root/Desktop; \
   wget -q http://fxtrade.oanda.com/fxgui/www/fxtrade/fxTrade_installer.tar; \
   wget -q https://fxtrade.oanda.com/fxgui/www/fxtrade-preview/fxTradePreview_installer.tar; \
