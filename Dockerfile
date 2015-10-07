@@ -1,6 +1,6 @@
 FROM alekna/openbox-desktop-vnc
 
-RUN yum install -y wget tar unzip icecat; \
+RUN yum install -y wget tar unzip firefox; \
   yum install -y https://copr-be.cloud.fedoraproject.org/results/jschwart/openjdk-7/fedora-21-x86_64/java-1.7.0-openjdk-legacy-1.7.0.79-2.5.5.1.fc21/java-1.7.0-openjdk-legacy-headless-1.7.0.79-2.5.5.1.fc21.x86_64.rpm; \
   yum install -y https://copr-be.cloud.fedoraproject.org/results/jschwart/openjdk-7/fedora-21-x86_64/java-1.7.0-openjdk-legacy-1.7.0.79-2.5.5.1.fc21/java-1.7.0-openjdk-legacy-1.7.0.79-2.5.5.1.fc21.x86_64.rpm; \
   yum clean all
