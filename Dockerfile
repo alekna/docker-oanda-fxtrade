@@ -13,3 +13,4 @@ RUN mkdir /root/Desktop; \
   tar -xf fxTrade_installer.tar; sh fxTrade_installer.sh; \
   tar -xf fxTradePreview_installer.tar; sh fxTradePreview_installer.sh; \
   tar -xf fxTradePractice_installer.tar; sh fxTradePractice_installer.sh
+RUN rm *.tar *.sh
