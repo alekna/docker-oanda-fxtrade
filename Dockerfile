@@ -1,6 +1,6 @@
 FROM alekna/openbox-desktop-vnc
 
-RUN dnf install -y tar unzip firefox libXScrnSaver GConf2 libXScrnSaver GConf2 xpdf; \
+RUN dnf install -y tar unzip firefox libXScrnSaver GConf2 libXScrnSaver GConf2 xpdf libgnome; \
     dnf clean all; \
     curl -O -jksSLH "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jre-7u79-linux-x64.rpm; \
     rpm -i jre-7u79-linux-x64.rpm; \
