@@ -10,8 +10,8 @@ RUN dnf install -y tar unzip firefox libXScrnSaver GConf2 libXScrnSaver GConf2 x
     tar -xf fxTrade_installer.tar; sh fxTrade_installer.sh; \
     tar -xf fxTradePractice_installer.tar; sh fxTradePractice_installer.sh; \
     rm -f *.tar *.sh *.rpm; \
-    mv .oanda/jar/fxTrade/jxbrowser-linux64-6.1.1.jar .oanda/jxbrowser-linux64-6.1.1.jar; \
+    mv .oanda/jar/fxTrade/jxbrowser-linux64.jar .oanda/jar/jxbrowser-linux64.jar; \
     rm -f .oanda/jar/fxTrade/jxbrowser-*; \
     rm -f .oanda/jar/fxTradePractice/jxbrowser-*; \
-    ln -s ~/.oanda/jxbrowser-linux64-6.1.1.jar ~/.oanda/jar/fxTrade/jxbrowser-linux64-6.1.1.jar; \
-    ln -s ~/.oanda/jxbrowser-linux64-6.1.1.jar ~/.oanda/jar/fxTradePractice/jxbrowser-linux64-6.1.1.jar
+    ln -s ~/.oanda/jar/jxbrowser-linux64.jar ~/.oanda/jar/fxTrade/jxbrowser-linux64.jar; \
+    ln -s ~/.oanda/jar/jxbrowser-linux64.jar ~/.oanda/jar/fxTradePractice/jxbrowser-linux64.jar
