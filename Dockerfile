@@ -9,8 +9,3 @@ RUN curl -o /etc/yum.repos.d/jschwart-openjdk-7-fedora-25.repo https://copr.fedo
     tar -xf fxTrade_installer.tar; sh fxTrade_installer.sh; \
     tar -xf fxTradePractice_installer.tar; sh fxTradePractice_installer.sh; \
     rm -f *.tar *.sh *.rpm; \
-    mv .oanda/jar/fxTrade/jxbrowser-linux64.jar .oanda/jar/jxbrowser-linux64.jar; \
-    rm -f .oanda/jar/fxTrade/jxbrowser-*; \
-    rm -f .oanda/jar/fxTradePractice/jxbrowser-*; \
-    ln -s ~/.oanda/jar/jxbrowser-linux64.jar ~/.oanda/jar/fxTrade/jxbrowser-linux64.jar; \
-    ln -s ~/.oanda/jar/jxbrowser-linux64.jar ~/.oanda/jar/fxTradePractice/jxbrowser-linux64.jar
