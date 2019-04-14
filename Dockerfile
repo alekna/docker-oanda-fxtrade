@@ -8,3 +8,4 @@ RUN dnf install -y tar unzip firefox libXScrnSaver GConf2 xpdf libgnome java-1.8
     tar -xf fxTrade_installer.tar; sh fxTrade_installer.sh; \
     tar -xf fxTradePractice_installer.tar; sh fxTradePractice_installer.sh; \
     rm -f *.tar *.sh *.rpm; \
+    sed -i "s/java.*/bash -c '& > \/dev\/null 2>\&1'/" /root/Desktop/*.desktop;
