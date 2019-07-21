@@ -1,6 +1,6 @@
 FROM alekna/openbox-desktop-vnc
 
-RUN dnf install -y tar unzip firefox libXScrnSaver GConf2 xpdf libgnome java-1.8.0-openjdk; \
+RUN dnf install -y tar unzip java-1.8.0-openjdk; \
     dnf clean all; \
     mkdir /root/Desktop; \
     curl -s -O https://fxtrade.oanda.com/fxgui/www/fxtrade/fxTrade_installer.tar; \
