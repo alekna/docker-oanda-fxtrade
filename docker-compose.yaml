@@ -1,9 +1,10 @@
 version: "2.0"
 services:
   "oanda":
-    image: alekna/oanda-fxtrade-platform
+    image: alekna/oanda-fxtrade
     environment:
-      - TZ=Etc/UTC
-    network_mode: "host"
+      - TZ=Europe/London
     logging:
       driver: "none"
+    ports:
+      - "5900:5900"
