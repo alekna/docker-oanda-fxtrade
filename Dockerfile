@@ -1,7 +1,7 @@
 FROM alekna/openbox-desktop-vnc
 
 RUN apt-get update; \
-    apt-get install -y default-jre unzip; \
+    apt-get install -y default-jre unzip libgconf-2-4 libxss1; \
     apt-get clean
 RUN mkdir /root/Desktop; \
     curl -sO https://fxtrade.oanda.com/fxgui/www/fxtrade/fxTrade_installer.tar; \
