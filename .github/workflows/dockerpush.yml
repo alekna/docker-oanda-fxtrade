@@ -1,9 +1,7 @@
 name: Publish docker image
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
 
 env:
     USERNAME: alekna
@@ -12,8 +10,6 @@ env:
 jobs:
   push:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
-
     steps:
       - uses: actions/checkout@v2
 
