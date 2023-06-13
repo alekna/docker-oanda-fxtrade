@@ -1,11 +1,9 @@
 FROM alekna/openbox-desktop-vnc
 
 RUN apt-get update; \
-    apt-get install -y default-jre unzip libgconf-2-4 libxss1 patch; \
+    apt-get install -y default-jre unzip libgconf-2-4 libxss1; \
     apt-get clean
 WORKDIR /root
-ADD java.security.patch .
-RUN patch /etc/java-11-openjdk/security/java.security java.security.patch
 RUN mkdir /root/Desktop; \
     curl -sO https://fxtrade-gui.oanda.com/fxtrade/fxTrade_installer.tar; \
     curl -sO https://fxtrade-gui.demo.oanda.com/fxgame/fxTradePractice_installer.tar; \
